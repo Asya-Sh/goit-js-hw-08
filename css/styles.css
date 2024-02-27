@@ -1,0 +1,53 @@
+body {max-width: 1440px;
+max-height: 696px;}
+  
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+
+img {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;}
+
+  .gallery {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    row-gap: 20px;
+    column-gap: 24px;
+
+    overflow: hidden;
+    transition: 0.4;
+  }
+
+  .gallery-image:hover {
+    width: 376px;
+    height: 208px;
+    transition: all 0.5s ease;
+
+    cursor: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCAzNiAzOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjE1NyAzNi45MDk4QzExLjQ4NjcgMzcuMTgzNyAxMS45MDE4IDM3LjMzMzUgMTIuMzMwMyAzNy4zMzMzTDMxLjgzMzMgMzcuMzMzM0MzMi44MDU4IDM3LjMzMzMgMzMuNzM4NCAzNi45NDcgMzQuNDI2MSAzNi4yNTk0QzM1LjExMzcgMzUuNTcxNyAzNS41IDM0LjYzOTEgMzUuNSAzMy42NjY2TDM1LjUgMjAuNDQ4M0MzNS40OTk3IDE5LjU0NjIgMzUuMTY2OCAxOC42NzYgMzQuNTY1MSAxOC4wMDM5QzMzLjk2MzQgMTcuMzMxOCAzMy4xMzUgMTYuOTA1MiAzMi4yMzg1IDE2LjgwNTVMMTkgMTUuMzMzM0wxOSA0LjMzMzMxQzE5IDMuMzYwODUgMTguNjEzNyAyLjQyODIyIDE3LjkyNjEgMS43NDA1OUMxNy4yMzg0IDEuMDUyOTUgMTYuMzA1OCAwLjY2NjY0NCAxNS4zMzMzIDAuNjY2NjQ0QzE0LjM2MDkgMC42NjY2NDQgMTMuNDI4MiAxLjA1Mjk1IDEyLjc0MDYgMS43NDA1OUMxMi4wNTMgMi40MjgyMiAxMS42NjY3IDMuMzYwODUgMTEuNjY2NyA0LjMzMzMxTDExLjY2NjcgMjYuMzMzM0w2LjExMTY3IDI0LjExMTNDNS42NDc1OCAyMy45MjU4IDUuMTUwNDkgMjMuODM3IDQuNjUwODggMjMuODUwNUM0LjE1MTI3IDIzLjg2NCAzLjY1OTY4IDIzLjk3OTUgMy4yMDYyOSAyNC4xODk4QzIuNzUyOSAyNC40MDAxIDIuMzQ3MjYgMjQuNzAwOCAyLjAxNDI3IDI1LjA3MzVDMS42ODEyNyAyNS40NDYyIDEuNDI3OTUgMjUuODgzIDEuMjY5ODMgMjYuMzU3MUwxLjA2MjY3IDI2Ljk4MDVDMC45NDU4MjUgMjcuMzMwMiAwLjkzNzM5OSAyNy43MDcxIDEuMDM4NDkgMjguMDYxOEMxLjEzOTU4IDI4LjQxNjQgMS4zNDU0NyAyOC43MzIyIDEuNjI5MTcgMjguOTY3OEwxMS4xNTcgMzYuOTA5OFoiIGZpbGw9IiM0RTc1RkYiLz4KPC9zdmc+Cg=="),
+    pointer;
+  }
+
+  .modal-image {
+    width: 1112px;
+height: 640px;
+padding-top: 28px;
+padding-bottom: 28px;
+  }
+
+
