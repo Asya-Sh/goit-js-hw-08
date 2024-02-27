@@ -65,6 +65,10 @@ const images = [
   ];
 
   const container = document.querySelector('.gallery');
+  let instance;
+
+  container.addEventListener("click", onGalleryClick);
+  document.addEventListener("keydown", onEscClick)
 
 
 function imageTemplate(img) {
@@ -92,13 +96,13 @@ function renderImages(arr) {
 
 renderImages(images);
 
-container.addEventListener("click", onGalleryClick);
+
 
 function onGalleryClick(e) {
   e.preventDefault();
   if (e.target === e.currentTarget) return;
  
-  const instance = basicLightbox.create(`
+  instance = basicLightbox.create(`
     <div class="modal">
     <img class="modal-image" src="${e.target.dataset.source}" alt="${e.target.alt}">
     </div>
@@ -110,7 +114,6 @@ instance.show()
 function onEscClick(e) {
   if (e.code !== "Escape") return;
   
-
-  instance.close();
+instance.close()
 
 }
