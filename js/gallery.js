@@ -68,7 +68,7 @@ const images = [
   let instance;
 
   container.addEventListener("click", onGalleryClick);
-  document.addEventListener("keydown", onEscClick)
+ 
 
 
 function imageTemplate(img) {
@@ -109,11 +109,15 @@ function onGalleryClick(e) {
 `)
 
 instance.show()
+
+document.addEventListener("keydown", onEscClick)
 }
 
 function onEscClick(e) {
   if (e.code !== "Escape") return;
-  
-instance.close()
+  if (instance) {
+    instance.close();
 
+    document.removeEventListener("keydown", onEscClick);
+  }
 }
